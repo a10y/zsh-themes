@@ -1,9 +1,3 @@
-# Dropdown prompt
-ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[green]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}!"
-ZSH_THEME_GIT_PROMPT_CLEAN=""
-
 # User prompt: Red hash for root, $ for normal users
 user_prompt() {
     if [ $UID -eq 0 ];  then
