@@ -3,9 +3,8 @@ user_prompt() {
     if [ $UID -eq 0 ];  then
         printf '${fg_bold[red]}#${reset_color}'
     else
-        printf '$'
+        printf '>'
     fi
 }
 
-PROMPT="$fg_bold[green]$fg[green]%n${reset_color}${fg[white]} @ ${reset_color}${fg_bold[cyan]}%1~${reset_color}
-$(user_prompt) "
+PROMPT="%{$fg_bold[green]%}%{$fg[green]%}%n%{$reset_color%}%{$fg[white]%} @ %{$reset_color%}%{$fg_bold[cyan]%}%1~%{$reset_color%} $(user_prompt) "
