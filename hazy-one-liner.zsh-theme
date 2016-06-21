@@ -8,3 +8,6 @@ user_prompt() {
 }
 
 PROMPT="%{$fg_bold[yellow]%}%1~%{$reset_color%} $(user_prompt) "
+
+# Set the LSCOLORS variable as well with this theme
+export LSCOLORS="DxFxcaBdCxbGfababaDaDa"
